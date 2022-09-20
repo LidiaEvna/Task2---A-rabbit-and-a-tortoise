@@ -21,7 +21,6 @@ class AnimalThread extends Thread {
     }
 @Override
     public void run() {
-
     Thread.currentThread().setPriority(distanceThread);
     Thread.currentThread().setName(Pol);
 
@@ -39,9 +38,6 @@ class AnimalThread extends Thread {
             } else {
                 Thread.currentThread().setPriority(1);
             }
-            timeToStep = 1000 / (Thread.currentThread().getPriority());
-        }
-        if (p == distance - 10) {
         }
     }
         System.out.println("«Финиш»");
